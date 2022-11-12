@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EggsGear - Cửa Hàng Linh Kiện Máy Tính Số 1</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="icon" href="./Logo-Desgin.png">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+  <div id="main">
+    
+    <div id ="Header">
+        <div class = "header">
+            <div class="header-image">
+            </div>
+            <div class="Nav">
+                <a href="EggGear.html">Trang chủ</a>
+                <a href="https://o.voz.vn/" target="_plank">Diễn đàn</a>
+                <a href="#Footer-container">Liên hệ</a>
+                <a href="#" onclick="thongbao()">Xây dựng cấu hình</a>
+                <a href="#" onclick="thongbao()">Giảm Giá</a>
+                <a href="#" onclick="thongbao()">Sản Phẩm Bán Chạy</a>
+                <a target="_plank" href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C3%A0i+G%C3%B2n/@10.7599224,106.6800696,17z/data=!3m1!4b1!4m5!3m4!1s0x31752f1b7c3ed289:0xa06651894598e488!8m2!3d10.7599171!4d106.6822583?hl=vi-VN">Địa Chỉ</a>
+                  <div class="search-container" onclick="thongbao()">
+                    <!-- <form action="/action_page.php">
+                      <input type="text" placeholder="Tìm kiếm.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form> -->
+                  </div>
+                  <div class="header__cart"  onclick="thongbao()">
+                    <span><i class="fas fa-search" onclick="thongbao()"></i></span>
+                    <span class="user-login"><i class="fas fa-user" style="font-size: 18px;" onclick="thongbao()"></i></span>
+                    <span class="header__cart--icon">  <a href="#Footer-container" class="fas fa-shopping-cart"></a></span>
+                  </div>
+                  <!-- <div id="mycart">
+                    <table>
+                    <tr>
+                      <th>STT</th>
+                      <th>Hình</th>
+                      <th>Tên sản phẩm</th>
+                      <th>Đơn giá</th>
+                      <th>Số lượng</th>
+                      <th>Thành tiền</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td><img src="./img/pc1.jpg" alt=""></td>
+                      <td>Hextech S</td>
+                      <td>15.900.000 </td>
+                      <td>1</td>
+                      <td>15.900.000</td>
+                    </tr>
+                    <tr>
+                      <th colspan="5">Tổng đơn hàng</th>
+                      <th>
+                        <div>15.900.000</div>
+                      </th>
+                    </tr>
+                   
+                  </table>
+                  </div> -->
+            </div>
+        </div>
+          <div class="wrapper">
+            <div class="sidebar">
+                <ol>
+                  <div class="sidebar_header"><i class="fas fa-list"></i> Danh mục sản phẩm</div>
+                  <li>
+                    <span> <i class="sidebar__header--icon fas fa-desktop" style="width: 30px;"></i></span>
+                    <span><a href="#pc-site" class="wrapper-sidebar_text"> PC</a> </span>
+                  </li>
+                  <li>
+                    <span><i class="sidebar__header--icon fas fa-laptop" style="width: 30px;"></i></span>
+                    <span> <a href="#laptop-site" class="wrapper-sidebar_text"> Laptop</a></span>       
+                  </li>
+                  <li>
+                    <span><i class="sidebar__header--icon fab fa-apple" style="width: 30px;"></i></span>
+                    <span><a href="#" class="wrapper-sidebar_text"></i> Apple</a></span>                   
+                  </li>
+                  <li>
+                    <span><i class="sidebar__header--icon fas fa-microchip" style="width: 30px;"></i></span>
+                    <span><a href="#" class="wrapper-sidebar_text"> Linh kiện máy tính</a></span>
+                  </li>                  
+                  <li>
+                    <span> <i class="sidebar__header--icon fas fa-tv" style="width: 30px;"></i></span>
+                    <span><a href="#" class="wrapper-sidebar_text"> Màn hình</a></span>                   
+                  </li>
+                  <li>
+                    <span> <i class="sidebar__header--icon fas fa-mouse" style="width: 30px;"></i></span>
+                   <span> <a href="#ms-site" class="wrapper-sidebar_text"> Chuột Gaming</a> </span>
+                   
+                  </li>
+                  <li>
+                    <span>  <i class="sidebar__header--icon fab fa-usb" style="width: 30px;"></i></span>
+                  <span><a href="#" class="wrapper-sidebar_text"> USB Hub</a></span>                
+                  </li>
+                  <li>
+                    <span> <i class="sidebar__header--icon fas fa-headphones" style="width: 30px;"></i></span>
+                   <span><a href="#" class="wrapper-sidebar_text"> Loa & Tai nghe</a></span>                 
+                  </li>                
+                  <li>
+                    <span> <i class="sidebar__header--icon far fa-keyboard" style="width: 30px;"></i></span>
+                   <span><a href="#kb-site" class="wrapper-sidebar_text">Bàn phím</a></span>             
+                  </li>
+                  <li>
+                    <span><i class="sidebar__header--icon fas fa-chair" style="width: 30px;"></i></span>
+                    <span><a href="#" class="wrapper-sidebar_text">Ghế Ergonomic</a></span>   
+                  </li>
+                  <li>
+                    <span><i class="sidebar__header--icon fas fa-database" style="width: 30px;"></i></span>
+                    <span><a href="#" class="wrapper-sidebar_text">Thiết bị mạng</a></span>
+                  </li>  
+                </ol>
+            </div>
+            <div class="img-wrapper"></div>
+          </div>
+    </div>
+
+    <div id="Content">
+        <h1 id="pc-site" class="Pc-heading">EggsGear PC</h1>
+        <div class="pc-container">
+          <div class="pc">
+            <a href="pc1.html">
+              <img
+              src="./img/pc1.jpg"
+              alt=""
+              class="pc-image"
+              />
+            </a>
+            <div class="pc-content">
+              <div class="pc-top">
+                <h3 class="pc-title"> <a href="pc1.html">Hextech S</a> </h3>
+                <h3 class="pc-price">Giá: 15.900.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc">
+            <a href="pc2.html">
+              <img
+                src="./img/pc2.jpg"
+                alt=""
+                class="pc-image"
+              />
+            </a>
+            <div class="pc-content">
+              <div class="pc-top">
+                <h3 class="pc-title"> <a href="pc2.html"> Titan M</a></h3>
+                <h3 class="pc-price">Giá: 8.790.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc">
+            <a href="pc3.html">
+              <img
+              src="./img/pc3.jpg"
+              alt=""
+              class="pc-image"
+              />
+
+            </a>
+            <div class="pc-content">
+              <div class="pc-top">
+                <h3 class="pc-title"><a href="./pc3.html">Ivy M</a> </h3>
+                <h3 class="pc-price">Giá: 13.990.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pc">
+            <a href="pc4.html">
+
+              <img
+              src="./img/pc4.jpg"
+              alt=""
+              class="pc-image"
+              />
+            </a>
+            <div class="pc-content">
+              <div class="pc-top">
+                <h3 class="pc-title"> <a href="./pc4.html">Athen M</a> </h3>
+                <h3 class="pc-price">Giá: 20.290.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Laptop -->
+        <h1 id="laptop-site" class="laptop-heading">LAPTOP VĂN PHÒNG</h1>
+        <div class="laptops">
+          <div class="laptop">
+            <a href="asus_vivobook.html">
+              <img
+              src="./img/laptop_asus_vivobook_a515ea_bq1530t(15,190,000).jpg"
+              alt=""
+              class="laptop-image"
+              />
+
+            </a>
+            <div class="laptop-content">
+              <div class="laptop-top">
+                <h3 class="laptop-title"> <a href="./asus_vivobook.html"> Laptop Văn Phòng ASUS Vivobook A515EA BQ1530T</a></h3>
+                <h3 class="laptop-price">Giá: 15.900.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop">
+            <a href="dell_vostro.html">
+
+              <img
+                src="./img/laptop_dell_vostro_3500_v5i3001w(15,290,000).jpg"
+                alt=""
+                class="laptop-image"
+              />
+            </a>
+            <div class="laptop-content">
+              <div class="laptop-top">
+                <h3 class="laptop-title"> <a href="./dell_vostro.html">Laptop Văn Phòng Dell Vostro 3500 V5I3001W</a> </h3>
+                <h3 class="laptop-price">Giá: 15.290.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop">
+            <a href="idea_pad5.html">
+
+              <img
+                src="./img/laptop_ideapad_5_14alc05_82lm00d5vn(18,390,000).jpg"
+                alt=""
+                class="laptop-image"
+              />
+            </a>
+            <div class="laptop-content">
+              <div class="laptop-top">
+                <h3 class="laptop-title"><a href="./idea_pad5.html"> Laptop Lenovo IdeaPad 5 14ALC05 82LM00D5VN</a></h3>
+              </div>
+              <div class="laptop-bottom">
+                <h3 class="laptop-price">Giá: 18.390.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="laptop">
+            <a href="MSI_modern.html">
+              <img
+                src="./img/laptop_msi_modern_14_b5m_064vn(16,990,000).jpg"
+                alt=""
+                class="laptop-image"
+              />
+
+            </a>
+            <div class="laptop-content">
+              <div class="laptop-top">
+                <h3 class="laptop-title"> <a href="./MSI_modern.html">Laptop MSI Modern 14 B5M 064VN AMD Ryzen</a> </h3>
+                <h3 class="laptop-price">Giá: 16.990.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Mouse -->
+        <h1 id="ms-site" class="mouse-heading">CHUỘT LOGITECH</h1>
+        <div class="mouses">
+          <div class="mouse">
+            <a href="Chuot1.html">
+
+              <img
+                src="./img/chuot_gaming_logitech_g300s(290,000).jpg"
+                alt=""
+                class="mouse-image"
+              />
+            </a>
+            <div class="mouse-content">
+              <div class="mouse-top">
+                <h3 class="mouse-title"><a href="./Chuot1.html">Chuột gaming Logitech G300S</a> </h3>
+                <h3 class="laptop-price">Giá: 290.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mouse">
+            <a href="Chuot2.html">
+              <img
+                src="./img/chuot_logitech_g_pro_hero(890,000).png"
+                alt=""
+                class="mouse-image"
+              />
+
+            </a>
+            <div class="mouse-content">
+              <div class="mouse-top">
+                <h3 class="mouse-title"><a href="Chuot2.html">Chuột Gaming Logitech G Pro Hero Black</a> </h3>
+                <h3 class="mouse-price">Giá: 890.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mouse">
+            <a href="Chuot3.html">
+
+              <img
+                src="./img/chuot_logitech_g_pro_x_superlight_wireless_black(2,990,000).jpg"
+                alt=""
+                class="mouse-image"
+              />
+            </a>
+            <div class="mouse-content">
+              <div class="mouse-top">
+                <h3 class="mouse-title"> <a href="Chuot3.html">Logitech G Pro X Superlight Wireless</a>
+                  
+                </h3>
+              </div>
+              <div class="mouse-bottom">
+                <h3 class="mouse-price">Giá: 2.990.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mouse">
+            <a href="Chuot4.html">
+
+              <img
+                src="./img/chuotkhongday_logitech-m331-silent(330,000).png"
+                alt=""
+                class="mouse-image"
+              />
+            </a>
+            <div class="mouse-content">
+              <div class="mouse-top">
+                <h3 class="mouse-title"> <a href="Chuot4.html">Chuột không dây Logitech M331 Silent</a> </h3>
+                <h3 class="mouse-price">Giá: 330.000đ</h3>
+                <div class="fnote">
+                  <span>Hỗ trợ trả góp 0% không cần thẻ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Keyboard -->
+        <h1 id="kb-site" class="keyboard-heading">BÀN PHÍM</h1>
+        <div class="keyboards">
+          <div class="keyboard">
+            <a href="keyboard1.html">
+
+              <img
+                src="./img/ban-phim-ajazz-douyu-dks100-black(340,000).jpg"
+                alt=""
+                class="keyboard-image"
+              />
+            </a>
+            <div class="keyboard-content">
+              <div class="keyboard-top">
+                <h3 class="keyboard-title"> <a href="./keyboard1.html">Bàn phím Ajazz DOUYU DKS100</a> </h3>
+                <h3 class="laptop-price">Giá: 340.000đ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard">
+            <a href="keyboard2.html">
+              <img
+                src="./img/ban-phim-chuyen-van-phong-logitech-k120(160,000).jpg"
+                alt=""
+                class="keyboard-image"
+              />
+
+            </a>
+            <div class="keyboard-content">
+              <div class="keyboard-top">
+                <h3 class="keyboard-title"><a href="./keyboard2.html">Bàn phím Logitech K120</a>
+                  
+                </h3>
+                <h3 class="keyboard-price">Giá: 160.000đ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard">
+            <a href="keyboard3.html">
+
+              <img
+                src="./img/ban-phim-dare-u-LK185(170,000).jpg"
+                alt=""
+                class="keyboard-image"
+              />
+            </a>
+            <div class="keyboard-content">
+              <div class="keyboard-top">
+                <h3 class="keyboard-title"><a href="./keyboard3.html">Bàn phím văn phòng Dare-U LK185 </a> 
+                </h3>
+              </div>
+              <div class="keyboard-bottom">
+                <h3 class="keyboard-price">Giá: 170.000đ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="keyboard">
+            <a href="keyboard4.html">
+
+              <img
+                src="./img/ban-phim-fuhlen-L411-USB-black(230,000).jpg"
+                alt=""
+                class="keyboard-image"
+              />
+            </a>
+            <div class="keyboard-content">
+              <div class="keyboard-top">
+                <h3 class="keyboard-title"><a href="./keyboard4.html">Bàn phím Fuhlen L411 USB Black</a> </h3>
+                <h3 class="keyboard-price">Giá: 230.000đ</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="icon-fixed-right-group">
+              <a href="https://facebook.com/" target="_blank">
+                <i class="fab fa-facebook" style="color: #fff;"></i>
+              </a>
+              <a href="https://youtube.com/" target="_blank">
+                <i class="fab fa-youtube" style="color: red;"></i>
+              </a>
+              <a href="https://instagram.com/" target="_blank">
+                <i class="fab fa-instagram" style="color: #fff;"></i>
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                <i class="fab fa-twitter-square" style="color: blue;"></i>
+              </a>
+      </div>
+    </div>
+  </div>
+  
+  <div id="Footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2>Menu</h2>
+                <nav><a id="navicon" href="#"><img src="tf_navicon.png" alt="" /></a></nav>
+                <a href="#pc-site">PC</a>
+                <a href="#laptop-site">Laptop</a>
+                <a href="#ms-site">Chuột</a>
+                <a href="#kb-site">Bàn phím</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Trang liên quan</h2>
+                <nav><a id="navicon" href="#"><img src="./img/tf_navicon.png" alt="" /></a></nav>
+                <a href="#">Trang chủ</a>
+                <a href="#" onclick="thongbao()">Khuyến mãi</a>
+                <a href="#" onclick="hotro()">Hỗ trợ</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Liên hệ</h2>
+                <p>Q.Gò Vấp - Hồ Chí Minh</p>
+                <p>&#9743; Tel: 0978212451</p>
+                <a href="mailto:web123@gmail.com" id="mail">&#9993; Email: web123@gmail.com</a>
+            </div>
+          </div>
+  </div>
+  <script src="./json.js">  
+  </script>
+</body>
+</html>

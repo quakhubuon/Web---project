@@ -1,0 +1,245 @@
+body {
+    padding: 0 100px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(
+      90deg,
+      rgba(239, 239, 244, 1) 0%,
+      rgba(193, 193, 207, 1) 30%,
+      rgba(16, 16, 17, 1) 100%
+    );
+  }
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #bababa;
+  }
+  .info {
+    display: flex;
+  }
+  .imageproduct {
+    background-color: #fff;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+  .pc-img {
+    height: 563px;
+    width: 100%;
+  }
+  .infoproduct {
+    background-color: #fff;
+    flex-grow: 2;
+  }
+  .productname {
+    font-size: 24px;
+    margin: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .price-text {
+    font-size: 16px;
+    display: inline-block;
+    width: 70px;
+  }
+  .product-price {
+    font-size: 25px;
+    color: #e61010;
+    font-weight: 700;
+  }
+  .buy-btn {
+    background-color: #ed1f24;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 3px 30px 7px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* Footer CSS */
+  
+  #Footer-container {
+    margin-top: 20px;
+    background-color: #212329;
+    padding-bottom: 30px;
+    display: flex;
+  }
+  
+  .footer {
+    height: 190px;
+    width: 100%;
+    background-color: #212329;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+  
+  .footer-heading h2 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  
+  .footer-heading a {
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+  }
+  
+  .footer-heading p {
+    color: grey;
+    margin-bottom: 10px;
+    padding-bottom: 3px;
+  }
+  
+  .footer-heading a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+  }
+  nav a {
+    display: none;
+  }
+  
+  /* =================================
+  Desktop Styles: 769px and greater
+  =================================
+  */
+  @media only screen and (min-width: 769px) {
+  }
+  
+  /* ===============================
+  Mobile Styles: 0px to 480px
+  ===============================
+  */
+  @media only screen and (max-width: 480px) {
+    /*a#navicon {
+      display: block;
+      margin-top: 0px;
+  }*/
+  
+    /*.footer-heading a {
+      display: none;
+  }*/
+  
+    .footer-heading a#mail {
+      display: block;
+    }
+  
+    .footer {
+      padding-bottom: 90px; /* Nen xem lai. sau nay` */
+    }
+  
+    a#navicon:hover {
+      display: block;
+    }
+  }
+  /* ================================
+  Tablet Styles: 481px and greater
+  ================================
+  */
+  @media only screen and (min-width: 481px) {
+    .footer {
+      padding-bottom: 30px;
+    }
+  }
+  .Nav {
+    overflow: hidden;
+    background-color: #e9e9e9;
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .Nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .header-image {
+    background-image: url(./img/ban.png);
+    width: 100%;
+    height: 100px;
+    margin-top: -35px;
+    margin-bottom: -28px;
+  }
+  
+  .Nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .Nav a.active {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .Nav .search-container {
+    float: right;
+    position: absolute;
+    right: 0;
+    margin-right: 90px;
+  }
+  
+  .header__cart {
+    float: right;
+    right: 0;
+    margin-top: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  
+  .header__card--icon {
+    font-size: 24px;
+    line-height: 5px;
+  }
+  
+  .header__cart--title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 5px;
+  }
+  
+  .Nav input[type="text"] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  .Nav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 40px;
+    background-color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    border: none;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .Nav .search-container button:hover {
+    opacity: 0.3;
+  }
+  a {
+    text-decoration: none;
+  }
+  

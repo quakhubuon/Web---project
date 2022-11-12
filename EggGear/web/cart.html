@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EggsGear - Cửa Hàng Linh Kiện Máy Tính Số 1</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" href="./Logo-Desgin.png" />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+   <link href="layout.css" rel="stylesheet" />
+   <script src="cart.js" async></script>
+
+  </head>
+  <body>
+    <div id ="Header">
+        <div class = "header">
+            <div class="header-image"></div>
+            <div class="Nav">
+                <a href="EggGear.html">Trang chủ</a>
+                <a href="#">Diễn đàn</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Xây dựng cấu hình</a>
+                <a href="#">Giảm Giá</a>
+                <a href="#">Sản Phẩm Bán Chạy</a>
+                <a href="#">Địa Chỉ</a>
+                  <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Tìm kiếm.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header__cart">
+                    <span class="header__card--icon"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="header__cart--title">GIỎ HÀNG</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <section id="orderSection">
+      <form id="cart" name="cart" method="get" action="co_credit.html">
+        
+        <table id="cartTable">
+           <caption>Giỏ Hàng</caption>
+           <tr>
+              <td>
+                <table>
+                  <th>             
+                    <img class="img-product" src="./img/pc1.jpg" alt="">
+                  </th>
+                  <th>
+                    <label>PC Hextech S</label>
+                  </th>
+                </table>
+                
+                 <input type="hidden" name="modelCost" id="modelCost" value="15900000" />
+                 <input type="hidden" id="modelName" name="modelName" value="Chuột gaming Logitech G300S" />
+              </td>
+              <td class="rightA">
+                 <label for="modelQty">Qty</label>
+                 <select name="modelQty" id="modelQty">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                    <option value="10">10</option>
+                 </select>   
+              </td>                 
+              <td>
+                 <input type="text" name="orderCost" id="orderCost" size="10" readonly />
+              </td>
+           </tr>
+           <tr>
+              <td colspan="2"> 
+                 <input type="hidden" id="shippingType" name="shippingType" />                
+                 <fieldset>
+                    <legend>Shipping</legend>
+                    <label><input type="radio" id="overnight" name="shipping" value="200000" checked /> Giao trong 2H VND 200.000</label>
+                    <label><input type="radio" id="day_2" name="shipping" value="50000" /> Giao hàng nhanh VND 50.000</label>   
+                    <label><input type="radio" id="ground" name="shipping" value="20000" /> Giao thông thường VND 20.000</label> 
+                 </fieldset>
+              </td>
+              <td>
+                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+              </td>
+           </tr>        
+           <tr>
+              <td colspan="2" class="rightA">Tổng</td>
+              <td class="outcell">
+                 <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">VAT (10%)</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+              </td>
+           </tr>
+
+           <tr>
+              <td colspan="2" class="rightA">Tổng hóa đơn</td>
+              <td>
+                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+             </td>
+           </tr>
+        </table>
+        <a href="pc2.html">
+          <input type="submit" id="buttonAdd" value="Checkout" onclick="checkout()"/>
+
+        </a>
+      </form>
+   </section>
+
+
+
+
+
+    <div id="Footer-container">
+        <div class="footer">
+          <div class="footer-heading footer-1">
+            <h2>Menu</h2>
+            <nav>
+              <a id="navicon" href="#"><img src="tf_navicon.png" alt="" /></a>
+            </nav>
+            <a href="#">Laptop văn phòng</a>
+            <a href="#">Laptop gaming</a>
+            <a href="#">Chuột Logitech</a>
+            <a href="#">Bàn phím thường</a>
+          </div>
+          <div class="footer-heading footer-2">
+            <h2>Trang liên quan</h2>
+            <nav>
+              <a id="navicon" href="#"
+                ><img src="./img/tf_navicon.png" alt=""
+              /></a>
+            </nav>
+            <a href="#">Khuyến mãi</a>
+            <a href="#">Hỗ trợ</a>
+            <a href="#">Liên lạc</a>
+            <a href="#">Tuyển dụng</a>
+          </div>
+          <div class="footer-heading footer-3">
+            <h2>Liên hệ</h2>
+            <p>Q.Gò Vấp - Hồ Chí Minh</p>
+            <p>&#9743; Tel: 0978212451</p>
+            <a href="mailto:web123@gmail.com" id="mail"
+              >&#9993; Email: web123@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+  </body>

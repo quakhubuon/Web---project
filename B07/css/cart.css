@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+section:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:brown;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: #fff;
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color: brown;
+}
+
+header .navbar li {
+    position: relative;
+    display: inline-block;
+}
+
+header .navbar  a{
+    position: relative;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:#fff;
+    background: brown;
+    text-decoration: none;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:#fff;
+    background-color: brown;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+.sub-nav {
+    position: absolute;
+    width: 150px;
+    top: 124%;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    line-height: 40px;
+    z-index: 1;
+    box-shadow: 0px 0px 3px darkgrey;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.sub-nav li {
+    width: 100%;
+}
+
+.sub-nav li a {
+    display: block;
+}
+
+.fa-mug-saucer {
+    margin-left: 10px;
+}
+
+.fa-utensils {
+    margin-left: 15px;
+}
+
+.fa-birthday-cake {
+    margin-left: 23px;
+}
+
+.navbar li:hover .sub-nav {
+    display: block;
+}
+
+.ti-arrow-down {
+    font-size: 10px;
+}
+
+.review .slide .fa-quote-right{
+    position: absolute;
+    top:2rem; right:2rem;
+    font-size: 6rem;
+    color:#ccc;
+}
+
+.review .slide .user{
+    display: flex;
+    gap:1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .slide .user h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review .slide .user i{
+    font-size: 1.3rem;
+    color:yellow;
+}
+
+.review .slide p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--light-color);
+}
+
+.review .slide{
+    padding:2rem;
+    box-shadow:var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    position: relative;    
+}
+
+.review1 .slide{
+    padding:2rem;
+    box-shadow:var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    height: 200px;  
+}
+
+#slide1 {
+    background: url(../images/restaurant3.jpg);
+    background-size: cover;
+}
+
+#slide2 {
+    background: url(../images/restaurant2.jpg);
+    background-size: cover;
+}
+
+#slide3 {
+    background: url(../images/restaurant4.jpg);
+    background-size: cover;
+}
+
+#slide4 {
+    background: url(../images/restaurant5.jpg);
+    background-size: cover;
+}
+
+.footer {
+    background-color: #ccc;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:var(--black);
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1.6rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer .box-container .box a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color:var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit span{
+    color:var(--green);
+}
+
+.loader-container{
+    position: fixed;
+    top:0; left:0;
+    height:100%; 
+    width:100%;
+    z-index: 10000;
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.loader-container img{
+    width:35rem;
+}
+
+.loader-container.fade-out{
+    top:-110%;
+    opacity:0;
+}
+
+
+.modal.open {
+    display: flex;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.modal-header {
+    background-color: #009688;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.modal-container {
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 370px;
+    background-color: #fff;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-container .modal-close:hover {
+    background-color: #757575;
+    cursor: pointer;
+    opacity: 0.8;
+}   
+
+.modal-body {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); */
+    gap:1.5rem;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 500;
+    text-indent: 14px;
+    margin-top: 17px;
+} 
+
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 15px;
+    margin-bottom: 24px;
+    text-indent: 10px;
+}
+
+.modal-input:focus {
+    border: 1px solid black;
+}
+
+#pay {
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0px;
+    background-color: #009688;
+    border: none;
+    color: white;
+}
+
+#pay:hover {
+    opacity: 0.9;
+    color: #000;
+}
+
+#modal-footer {
+    text-align: right;
+    padding: 16px;
+}
+
+#btn {
+    text-align: left;
+}
+
+.modal-footer-button {
+    padding: 9px;
+    font-size: 13px;
+}
+
+.modal-footer-button:hover{
+    color:rgb(0, 0, 0);
+    transition: 0.1s;
+}
+button {
+    background-color: #f44336;
+    border: none;
+    color: white;
+}
+
+.box > .image > img:hover, 
+.box > img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translatey(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
+#pagination{
+    text-align: right;
+    margin-top: 15px;
+}
+.page-item{
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    color: #000;
+}
+.current-page{
+    background: #192a56;
+    color: #FFF;
+}
+
+#cart {
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    padding: 2px;
+}
+/* media queries  */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    header{
+        padding:1rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+
+}
+
+@media (max-width:768px){
+
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left:0; right:0;
+        background:#fff;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        display: block;
+        padding:1.5rem;
+        margin:1rem;
+        font-size: 2rem;
+        background:#eee;
+    }
+
+
+    .home .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .dishes .box-container .box img{
+        height:auto;
+        width: 100%;
+    }
+
+    .order form .inputBox .input{
+        width:100%;
+    }
+
+}
+
